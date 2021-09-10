@@ -11,7 +11,7 @@
 # Automated-retrieval info: https://help.waterdata.usgs.gov/faq/automated-retrievals
 #
 # Contact:   gs-w_support_nwisweb@usgs.gov
-# retrieved: 2021-09-05 19:30:18 EDT       (vaww01)
+# retrieved: 2021-09-13 00:07:05 EDT       (sdww01)
 #
 # Data for the following 1 site(s) are contained in this file
 #    USGS 09506000 VERDE RIVER NEAR CAMP VERDE, AZ
@@ -11963,3 +11963,10 @@ USGS	09506000	2021-09-01	215	P
 USGS	09506000	2021-09-02	176	P
 USGS	09506000	2021-09-03	185	P
 USGS	09506000	2021-09-04	164	P
+USGS	09506000	2021-09-05	141	P
+USGS	09506000	2021-09-06	124	P
+USGS	09506000	2021-09-07	116	P
+USGS	09506000	2021-09-08	108	P
+USGS	09506000	2021-09-09	104	P
+USGS	09506000	2021-09-10	98.5	P
+USGS	09506000	2021-09-11	96.7	P
