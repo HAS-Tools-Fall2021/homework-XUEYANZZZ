@@ -139,3 +139,12 @@ m_h2 = [flow[j] for j in ilisth2]
 print(np.mean(m_h1))
 print(np.mean(m_h2))
 # %%
+flowlist = [0,1,7,6,10,24]
+daylist  = [1,6,5,4,13,11]
+
+daypick  = [i for i in range(len(daylist)) if daylist[i] > 5]
+flowpick = [flowlist[j] for j in daypick]
+print(flowpick)
+test = [flowlist[j] for j in range(len(daylist)) if daylist[j] > 5]
+print(test)
+# %%
