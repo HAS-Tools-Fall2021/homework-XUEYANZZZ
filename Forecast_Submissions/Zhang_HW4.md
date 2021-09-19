@@ -37,6 +37,6 @@
     after 2010: 63; 19.8%
 
 4. How does the daily flow generally change from the first half of September to the second?
-   
+
      The daily flows during the first and second half September are 176.6 cfs and 166.0 cfs, respectively, reflecting the declining flow pattern during September. 
 
