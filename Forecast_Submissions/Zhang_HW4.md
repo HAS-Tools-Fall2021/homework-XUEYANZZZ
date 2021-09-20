@@ -2,7 +2,14 @@
 ### 19/09/2021
 ### Assignment 2
 
-
+_________
+## Grade: 
+3/3: Great work!
+A few notes for next time: 
+- I'm not grading your python script for content yet but I still want to be able to easily see the answers to the questions. Make sure you organize around questions and get rid of the comments from the start code that are not relevant. 
+- Great job getting images inserted into the markdown! I will also show another way to do this next week. 
+- Make sure to name your pythohn code per the assignmen instructions
+_________
 
 ### Questions
 1. Provide a summary of the forecast values you picked and why. Include discussion of the quantitative analysis that lead to your prediction. This can include any analysis you complete but must include at least two histograms and some quantitative discussion of flow quantiles that helped you make your decision.
