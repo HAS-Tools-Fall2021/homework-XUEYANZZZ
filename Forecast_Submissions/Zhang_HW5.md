@@ -5,6 +5,10 @@
 ### Assignment 5
 <br />
 </center>
+____
+### Grade
+3/3: wow great job!  I like how you used the USGS API to get the data we are going to get to that later in the class but you are ahead of the game :) 
+
 
 
 Because the average flow dring last week is still over 90 cfs, I forecasted it during next week should be 80 cfs.
