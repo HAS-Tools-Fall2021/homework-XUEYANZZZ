@@ -2,6 +2,10 @@
 ### 10/03/2021
 ### Assignment 6
 </br>
+_____
+### Grade
+3/3: Great job! I love what you did with the plots. Nice work with the shading and the filled line plots they all came out really great. 
+___
 
 ### Summary and supporting plots
 Given September flow values and October flow distribtuion, I predicted flows during next week and two weeks later are 150 cfs and 100 cfs, respectively.
