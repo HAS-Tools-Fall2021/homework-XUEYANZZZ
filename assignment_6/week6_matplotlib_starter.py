@@ -3,7 +3,7 @@
 
 # %%
 # Import the modules we will use
-import os
+# import os
 import numpy as np
 import pandas as pd
 import seaborn as sns
@@ -16,7 +16,7 @@ import sklearn as sklearn
 # Set the file name and path to where you have stored the data
 
 station_id = "09506000"
-data = nwis.get_record(sites= station_id, service= 'dv', start= '1989-01-01',end= '2021-10-02', parameterCd='00060')
+data = nwis.get_record(sites=station_id, service='dv', start='1989-01-01',end='2021-10-02', parameterCd='00060')
 data.columns = ['flow','agency_cd','site_no']
 
 # Expand the dates to year month day
@@ -95,7 +95,7 @@ fig.set_size_inches(5,5)
 fig.savefig("p4.png",dpi=300)
 
 # %%
-#5. Multipanel plot histograms of flow for September and October
+# 5. Multipanel plot histograms of flow for September and October
 fig, ax = plt.subplots()
 kwargs=dict(bins=30, edgecolor='grey', alpha=0.3)
 

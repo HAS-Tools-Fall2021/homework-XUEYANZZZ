@@ -60,3 +60,58 @@ for i in range(0,6):
     if i/2 
     data_frame.iloc[i,:] = [1,0,1]
 # %%
+#for loop: daily average for each day in october
+#
+filename = '../data/streamflow_week4.txt'
+filepath = os.path.join('../data', filename)
+data = pd.read_table(filepath, sep='\t', skiprows=30,
+                     names=['agency_cd', 'site_no',
+                            'datetime', 'flow', 'code'],
+                     parse_dates=['datetime']
+                     )
+
+# Expand the dates to year month day
+data['year'] = pd.DatetimeIndex(data['datetime']).year
+data['month'] = pd.DatetimeIndex(data['datetime']).month
+data['day'] = pd.DatetimeIndex(data['datetime']).day
+data['dayofweek'] = pd.DatetimeIndex(data['datetime']).dayofweek
+# %%
+# function example
+#def function_name(arguments):
+#    actions
+#    return 
+
+# indent is very important to return the right value!
+def dmean(data,month):
+    '''
+    cancluate multi-year daily mean during October
+    '''
+    flow = np.zeros(31)
+    for i in range(1,31):
+        flow[i-1] = data.loc[(data['day'] == i) & (data['month'] == month),'flow'].mean()
+
+    print(flow)
+    return flow 
+    #return aa, bb #kind of like a list
+
+
+# %%
+def mmean(data,month,dayinmonth,stryear,endyear):
+    '''one line description
+
+    -----parameter
+
+    -----return
+    '''
+
+    month_median = np.zeros(dayinmonth)
+    for d in range(dayinmonth):
+            daytemp = d+1
+            tempdata = data[(data['year'] >= stryear) & ((data['year'] <= endyear)) & (data['month'] == month) \
+                        & (data['day'] == daytemp)]
+            month_median[d] = np.median(tempdata['flow'])
+    
+    return month_median[d]
+    print('Iteration', d, 'Day=', daytemp, 'Flow=', month_median[d])
+# %%
+# homework this time: math solved forecast; with self-defined functio
