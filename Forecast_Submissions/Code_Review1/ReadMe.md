@@ -18,7 +18,9 @@
 ### Forecast
 We generated three plots as follows:
 - First plot: observed October flow during 2010-2021. Here we showed only flows after 2010 because climate change greatly affect streamflow
+  
   ![picture 1](./p1.png)
+  
 - Second plot: histogram of October flow during all past years with a mean of 130.7 cfs
   ![picture 2](./p2.png)
 - Third plot: Weekly mean flow (day 10-16) in October during 1989-2020. We can see increasing variabilities of weekly mean flow during day 10-16, especially after 2010, which supports our choice in the first plot.
