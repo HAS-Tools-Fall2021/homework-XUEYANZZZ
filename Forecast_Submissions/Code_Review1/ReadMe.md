@@ -30,6 +30,28 @@ We generated three plots as follows:
 </br>
 
 ### Code revision or suggestion
-- First, ()
-- Second, ()
-- Third, ()
+- First, Is the script easy to read and understand?
+Are variables and functions named descriptively when useful?
+
+Are the comments helpful?
+
+Can you run the script on your own easily?
+
+Are the doc-strings useful?
+
+Yes, all definitions are clear and meaning. The comments well explained why, what, and how to do the flow forecast. The script is well written!
+
+10/10
+- Second, Does the code follow PEP8 style consistently?
+If not are there specific instances where the script diverges from this style?
+
+Linter does not find any errors through the whole manuscript!
+
+10/10
+- Third, Is the code written elegantly without decreasing readability?
+
+No superfluous code was found. The function is essentially the forecast method used in this assignment with good explanation. The author proposed that 1-week and 2-week forecast can be decomposed into mean and mode of corresponding weeks. Moreover, the relaionship of September flow between 2020 and 2021 is the same as Ocotber between these two years.
+
+One suggestion is that moving self-defined functions at the begining of the script (after import).
+
+10/10
