@@ -6,6 +6,7 @@ import numpy as np
 from numpy.core.defchararray import array
 import random as random
 import pandas as pd 
+import matplotlib.pyplot as plt
 
 # %%
 array1 = np.array([1,2,3])
@@ -75,6 +76,58 @@ data['year'] = pd.DatetimeIndex(data['datetime']).year
 data['month'] = pd.DatetimeIndex(data['datetime']).month
 data['day'] = pd.DatetimeIndex(data['datetime']).day
 data['dayofweek'] = pd.DatetimeIndex(data['datetime']).dayofweek
+
+# %%
+data.set_index('datetime',inplace=True)
+
+mydata = np.zeros((31,5))
+mydata[:,0] = np.arange(1,32,1)
+# generate data (october min, max, median, and this year)
+
+mydata[:,1] = data[data.index.month == 10].groupby(data[data.index.month == 10].index.day).min()['flow']
+
+# maximum
+mydata[:,2] = data[data.index.month == 10].groupby(data[data.index.month == 10].index.day).max()['flow']
+
+# median
+mydata[:,3] = data[data.index.month == 10].groupby(data[data.index.month == 10].index.day).median()['flow']
+
+# maximum
+mydata[:,4] = data.loc[(data.index.month == 10) & (data.index.year == 2021),'flow']
+
+fig, ax=plt.subplots()
+ax.plot(mydata[:,0], mydata[:,1],label='min',linestyle=':')
+ax.plot(mydata[:,0], mydata[:,2],label='max',linestyle='-.')
+ax.plot(mydata[:,0], mydata[:,3],label='median')
+# ax.plot(data[(data.index.month == 10) & (data.index.year == 2021)])
+ax.set(yscale='log')
+ax.legend()
+
+# %%
+# use resample to get monthly total flow
+mydata2 = np.zeros((12,5))
+mydata2[:,0] = np.arange(1,13,1)
+# generate data (october min, max, median, and this year)
+
+mydata2[:,1] = data.groupby(data.index.month).min()['flow']
+
+# maximum
+mydata2[:,2] = data.groupby(data.index.month).max()['flow']
+
+
+# median
+mydata2[:,3] = data.groupby(data.index.month).median()['flow']
+
+# maximum
+#mydata[:,4] = data.loc[(data.index.month == 10) & (data.index.year == 2021),'flow']
+
+fig, ax=plt.subplots()
+ax.plot(mydata2[:,0], mydata2[:,1],label='min',linestyle=':')
+ax.plot(mydata2[:,0], mydata2[:,2],label='max',linestyle='-.')
+ax.plot(mydata2[:,0], mydata2[:,3],label='median')
+# ax.plot(data[(data.index.month == 10) & (data.index.year == 2021)])
+ax.set(yscale='log', xlim=(1,12),xticks=np.arange(1,12,1))
+ax.legend()
 # %%
 # function example
 #def function_name(arguments):

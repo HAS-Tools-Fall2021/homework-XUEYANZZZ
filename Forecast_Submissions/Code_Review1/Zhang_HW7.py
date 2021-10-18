@@ -15,6 +15,15 @@ import dataretrieval.nwis as nwis
 
 def generate_hist(data, stryear, endyear, month, yourtitle, figurename):
 
+        ''' Generate flow hisotgram at selected a month and years
+        ---------
+        parameters
+
+        ---------
+        outputs
+
+        '''
+
         fig, ax = plt.subplots()
         kwargs = dict(bins=30, edgecolor='grey', alpha=0.3)
 
