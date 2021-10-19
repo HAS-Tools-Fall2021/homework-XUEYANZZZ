@@ -6,7 +6,18 @@
 
 </center>
 
-</br>
+
+____________
+## Grade:
+### 1. Forecast Submision: 
+**3/3:** Great work I love your plots! I'm glad you got some good comments from the peer review and I really like your data downloading approach. You will be ahead of the game when we talk about that this week. 
+
+### 2. Graded Script
+Refer to [the rubric](https://github.com/HAS-Tools-Fall2021/Course-Materials21/blob/main/Content/Starter_Codes/week7_code_review_rubric.md) for details on scoring: 
+- **Readability:2.5/3** Great job with the commenting and the doc strings, overall very easy to follow. I just subtracted 0.5 because you need to include the data types in the docstrings for the input and output variables. 
+- **Style:3/3** no pep8 errors
+- **Code:3/3** Well done, I was able to run it with no issues.  One comment on your function. Note that using what we learned about time series last week, you can do tihs weekly averaging automatically without a for loop. 
+____________
 
 ### Forecast
 We generated three plots as follows:
