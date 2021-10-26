@@ -127,3 +127,15 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+Training/week_pd.py
+
+data/WBD_15_HU2_GDB/
+
+data/gagesII_9322_point_shapefile/
+
+assignment_10/Week10_NCEP_reanalysis_download.py
+
+assignment_10/Week10_Mapping_notes.py
+
+assignment_10/studyregion.jpg
