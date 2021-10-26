@@ -35,7 +35,7 @@ data.columns = ['prcp']
 # Get USGS streamflow data
 station_id = "09506000"
 strfdata = nwis.get_record(sites=station_id, service='dv', start='1989-01-01', end='2021-10-23', parameterCd='00060')
-strfdata.columns = ['flow','agency_cd','site_no']
+strfdata.columns = ['flow', 'agency_cd', 'site_no']
 
 # %%
 # Generate weekly time series for prcp and streamflow during 1989-2020
