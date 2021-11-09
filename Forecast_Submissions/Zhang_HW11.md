@@ -6,6 +6,11 @@
 
 </center>
 
+____
+### Grade: 
+3/3: Great work. I really like the datasets you added. 
+____
+
 1. A brief summary of the how you chose to generate your forecast this week.
    </br>
 
