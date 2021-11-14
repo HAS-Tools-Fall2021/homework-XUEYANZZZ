@@ -168,3 +168,12 @@ def mmean(data,month,dayinmonth,stryear,endyear):
     print('Iteration', d, 'Day=', daytemp, 'Flow=', month_median[d])
 # %%
 # homework this time: math solved forecast; with self-defined functio
+
+# %% boxplot
+data = pd.read_csv('/Users/xueyanzhang/Documents/Homework/RNR590/stats_lab4.csv')
+
+fig, ax = plt.subplots()
+ax.errorbar(data.CLASS_NAME, data.MEAN, data.STD, fmt='ok', lw=3)
+ax.set(title='Classified Temperature of All plots', ylabel='Temperature (degC)',
+       xlabel='Classes')
+fig.savefig('lab4_q4.jpg', dpi=300)
