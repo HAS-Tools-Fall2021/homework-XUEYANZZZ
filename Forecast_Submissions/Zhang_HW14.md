@@ -3,6 +3,11 @@
 ### 11/28/2021
 </br>
 
+___
+### Grade
+3/3: Great job! I'm sorry you were not able to get it to run but I think this is a great example of what's out there. In this case the authors have really provided the bare minium only providng the scripts to make their figures with no supporting documentaiton and no packages so they don't even work. Its interesting to see that this can happen even in really high profile articles such as this. 
+___
+
 1. What is the paper or project you picked? Include a title, a link the the paper and a 1-2 sentence summary of what its about.
 * Title: Global terrestrial water storage and drought severity under climate change
 * Paper link: https://www.nature.com/articles/s41558-020-00972-w#data-availability
