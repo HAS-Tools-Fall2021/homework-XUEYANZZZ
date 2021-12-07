@@ -2,6 +2,11 @@
 ### Assignment 15
 ### 12/4/2021
 </br>
+
+### Grade
+3/3 - I would have liked a bit more discussion here but I'm glad you got it working. Great job!
+
+
 Questions:
 
 1. What resources did you request on Puma? How long did you wait in the queue for your job to run and how long did it take to run?
